@@ -90,6 +90,10 @@ nmap <silent> g# g#zz
 nmap <C-j> <c-w>w
 nmap <C-k> <c-w>W
 
+" Circular buffer navigation
+map <C-Right> :bn<CR>
+map <C-Left> :bp<CR>
+
 " Drag Current Line/s Vertically
 " Bubble single lines
 if OSX()
