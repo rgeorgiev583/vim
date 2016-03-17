@@ -50,7 +50,7 @@ if has("mouse")
   set mouse=a
   set mousehide
   set mousemodel=popup
-  if has("mouse_sgr")|set ttymouse=sgr|else|set ttymouse=xterm2|endif
+  if has("mouse_sgr")|set ttymouse=sgr|endif
 endif
 
 " Editor Settings
