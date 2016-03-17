@@ -10,11 +10,12 @@ endif
 " Required:
 if has('vim_starting')
   set nocompatible
+  filetype off
   set runtimepath+=$HOME/.vim/bundle/vundle/
   set sessionoptions-=options
 endif
 
-call vundle#rc(expand($HOME.'/.vim/bundle/'))
+call vundle#begin(expand($HOME.'/.vim/bundle/'))
 Plugin 'gmarik/vundle'
 
 " Plugin Groups
@@ -94,5 +95,6 @@ if count(g:bundle_groups, 'colorscheme')
   Plugin 'sjl/badwolf'
 endif
 
+call vundle#end()
 " automatically load filetype plugins
 filetype plugin indent on
