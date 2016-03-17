@@ -243,14 +243,14 @@
     let g:UltiSnipsJumpBackwardTrigger = "<S-tab>"
     let g:UltiSnipsListSnippets="<C-Tab>"
     " YouCompleteMe
-    let g:ycm_register_as_syntastic_checker = 1
-    let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-    let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-    if GUI()
-      let g:ycm_key_invoke_completion = '<C-Space>'
-    else
-      let g:ycm_key_invoke_completion = '<C-@>'
-    endif
+    "let g:ycm_register_as_syntastic_checker = 1
+    "let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+    "let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+    "if GUI()
+      "let g:ycm_key_invoke_completion = '<C-Space>'
+    "else
+      "let g:ycm_key_invoke_completion = '<C-@>'
+    "endif
 
   endif
 
