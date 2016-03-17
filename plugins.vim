@@ -13,7 +13,8 @@
   let g:airline#extensions#hunks#enabled = 1
   let g:airline#extensions#ctrlp#show_adjacent_modes = 1
   let g:airline#extensions#whitespace#enabled = 1
-  let g:airline_theme='base16'
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline_theme='dark'
   let g:airline_left_sep = ''
   let g:airline_right_sep = ''
   if GUI()
