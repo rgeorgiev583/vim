@@ -70,6 +70,14 @@ else
   imap <A-[> <Esc><<i
 endif
 
+" Block indent/unindent with Tab/Shift-Tab
+vnoremap <Tab> >
+vnoremap <S-Tab> <
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+inoremap <Tab> <Esc>>>i
+inoremap <S-Tab> <Esc><<i
+
 " Keep search pattern at the center of the screen
 nmap <silent> n nzz
 nmap <silent> N Nzz
