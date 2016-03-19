@@ -1,27 +1,32 @@
-# Installation
+# vim
 
-## Prerequisites
+My personal Vim configuration.
+Plugins included; also shamelessly ripped off [helmuthdu's config](https://github.com/helmuthdu/vim).
+
+## Installation
+
+### Prerequisites
 
 - Git (1.7+)
 - Vim (7.3+)
 - ctags
 
-### Mac:
+#### Mac:
 
 - [Homebrew][homebrew] - `ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`
 - [MacVim][macvim] - `brew install macvim`
 - [Homesick][homesick] - `gem install homesick`
 - [ctags][ctags] - `brew install ctags-exuberant`
 
-# Vim
+## Vim
 
 Overview of my vim setup. Sensible defaults!
 
-## Mappings
+### Mappings
 
 Reference to vim mappings.
 
-### General
+#### General
 
 - ` ,           ` keyleader.
 - ` <Leader>cd  ` Switch to the directory of the open buffer.
@@ -39,7 +44,7 @@ Reference to vim mappings.
 - ` <spacebar>  ` spacebar create/open/close folding.
 - ` jj          ` Map escape key to jj.
 
-### Plugins
+#### Plugins
 
 - ` <Leader>B  ` buffergator
 - ` <Leader>ca ` calendar
@@ -50,11 +55,11 @@ Reference to vim mappings.
 - ` <Tab>      ` Ultisnips: Expand snippers
 - ` <C-Tab>    ` Ultisnips: Display list of snippers
 
-## Commands
+### Commands
 
 - `:w!` Sudo write!
 
-## Plug-Ins
+### Plug-Ins
 
 - [accelerated-smooth-scroll](https://github.com/yonchu/accelerated-smooth-scroll)
 - [airline](https://github.com/bling/vim-airline)
