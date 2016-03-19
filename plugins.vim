@@ -11,7 +11,7 @@
   let g:airline_inactive_collapse=1
   let g:airline_powerline_fonts = 1
   "let g:bufferline_echo = 0
-  "let g:airline#extensions#bufferline#enabled = 1
+  let g:airline#extensions#bufferline#enabled = 1
   let g:airline#extensions#syntastic#enabled = 1
   let g:airline#extensions#hunks#enabled = 1
   let g:airline#extensions#ctrlp#show_adjacent_modes = 1
