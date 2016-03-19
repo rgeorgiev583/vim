@@ -18,8 +18,8 @@
   let g:airline#extensions#whitespace#enabled = 1
   let g:airline#extensions#tabline#enabled = 1
   let g:airline_theme='dark'
-  let g:airline_left_sep = ''
-  let g:airline_right_sep = ''
+  "let g:airline_left_sep = ''
+  "let g:airline_right_sep = ''
   if GUI()
     if !exists('g:airline_symbols')
       let g:airline_symbols = {}
