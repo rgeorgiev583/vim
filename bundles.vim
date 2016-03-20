@@ -98,6 +98,7 @@ if count(g:bundle_groups, 'languages')
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'fatih/vim-go'
   Plugin 'rust-lang/rust.vim'
+  Plugin 'racer-rust/vim-racer'
 endif
 " COLORSCHEME
 if count(g:bundle_groups, 'colorscheme')
