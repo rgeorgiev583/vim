@@ -49,6 +49,10 @@ if count(g:bundle_groups, 'general')
   Plugin 'yonchu/accelerated-smooth-scroll'
   Plugin 'pelodelfuego/vim-swoop'
   Plugin 'chrisbra/vim-diff-enhanced'
+  " PCRE support
+  Plugin 'othree/eregex.vim'
+  " tmux integration with airline
+  Plugin 'edkolev/tmuxline.vim'
 endif
 " DEVELOPER
 if count(g:bundle_groups, 'devel')
@@ -74,6 +78,10 @@ if count(g:bundle_groups, 'devel')
   Plugin 'mhinz/vim-signify'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'scrooloose/syntastic'
+  " VCS (git) commands
+  Plugin 'tpope/vim-fugitive'
+  " gitk for vim
+  Plugin 'gregsexton/gitv'
 endif
 " LANGUAGES
 if count(g:bundle_groups, 'languages')
@@ -88,6 +96,8 @@ if count(g:bundle_groups, 'languages')
   Plugin 'leafgarland/typescript-vim'
   Plugin 'tpope/vim-rails'
   Plugin 'vim-ruby/vim-ruby'
+  Plugin 'fatih/vim-go'
+  Plugin 'rust-lang/rust.vim'
 endif
 " COLORSCHEME
 if count(g:bundle_groups, 'colorscheme')
