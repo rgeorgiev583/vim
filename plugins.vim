@@ -72,12 +72,12 @@
         \ }
 
 " easymotion
-  let g:EasyMotion_leader_key = 'e'
-  hi link EasyMotionTarget ErrorMsg
-  hi link EasyMotionShade  Comment
+  "let g:EasyMotion_leader_key = 'e'
+  "hi link EasyMotionTarget ErrorMsg
+  "hi link EasyMotionShade  Comment
 
 " emmet
-  let g:user_emmet_leader_key = '!'
+  "let g:user_emmet_leader_key = '!'
 
 " indent guides
   let g:indentLine_char = '│'
@@ -177,7 +177,7 @@
     let g:neocomplete#force_overwrite_completefunc = 1
 
      "Use honza's snippets.
-    let g:neosnippet#snippets_directory=expand($HOME.'/.vim/bundle/vim-snippets/snippets')
+    "let g:neosnippet#snippets_directory=expand($HOME.'/.vim/bundle/vim-snippets/snippets')
 
     " Define keyword.
     if !exists('g:neocomplete#keyword_patterns')
@@ -186,12 +186,12 @@
     let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
     " SuperTab like snippets behavior.
-    imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-    \ "\<Plug>(neosnippet_expand_or_jump)"
-    \: pumvisible() ? "\<C-n>" : "\<TAB>"
-    smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-    \ "\<Plug>(neosnippet_expand_or_jump)"
-    \: "\<TAB>"
+    "imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+"    \ "\<Plug>(neosnippet_expand_or_jump)"
+"    \: pumvisible() ? "\<C-n>" : "\<TAB>"
+    "smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+"    \ "\<Plug>(neosnippet_expand_or_jump)"
+"    \: "\<TAB>"
 
     " Some convenient mappings
     imap <expr><Up> pumvisible() ? "\<C-p>" : "\<Up>"
@@ -204,20 +204,20 @@
     "imap <expr><CR> pumvisible() ? "\<C-y>\<CR>" : "\<CR>"
 
     " <CR>: close popup
-    function! SmartReturn()
-      if pumvisible()
-        if neosnippet#expandable()
-          let expand = "\<Plug>(neosnippet_expand)"
-          return expand . neocomplete#smart_close_popup()
-        else
-          return neocomplete#smart_close_popup()
-        endif
-      else
-        return "\<CR>"
-      endif
-    endfunction
+    "function! SmartReturn()
+      "if pumvisible()
+        "if neosnippet#expandable()
+"          let expand = "\<Plug>(neosnippet_expand)"
+          "return expand . neocomplete#smart_close_popup()
+        "else
+          "return neocomplete#smart_close_popup()
+        "endif
+      "else
+        "return "\<CR>"
+      "endif
+    "endfunction
     " <CR> close popup and save indent or expand snippet
-    imap <expr> <CR> SmartReturn()
+    "imap <expr> <CR> SmartReturn()
 
     " Enable heavy omni completion.
     if !exists('g:neocomplete#sources#omni#input_patterns')
@@ -242,10 +242,10 @@
 
   else
     " ultisnips
-    let g:UltiSnipsExpandTrigger = "<Tab>"
-    let g:UltiSnipsJumpForwardTrigger = "<Tab>"
-    let g:UltiSnipsJumpBackwardTrigger = "<S-tab>"
-    let g:UltiSnipsListSnippets="<C-Tab>"
+"    let g:UltiSnipsExpandTrigger = "<Tab>"
+"    let g:UltiSnipsJumpForwardTrigger = "<Tab>"
+"    let g:UltiSnipsJumpBackwardTrigger = "<S-tab>"
+"    let g:UltiSnipsListSnippets="<C-Tab>"
     " YouCompleteMe
     "let g:ycm_register_as_syntastic_checker = 1
     "let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
