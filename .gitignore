@@ -1,5 +1,7 @@
 .ctrlp_cache/
+.netrwhist
 .undofile/
 bundle/
 session/
+sessions/
 view/

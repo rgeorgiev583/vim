@@ -87,3 +87,12 @@ if !exists('*s:MakeNewDir')
     autocmd BufWritePre * :call s:MakeNewDir(expand('<afile>'),+expand('<abuf>'))
   augroup END
 endif
+
+function! SetIndentWidth(n)
+  exec 'set shiftwidth=' . a:n
+  exec 'set softtabstop=' . a:n
+  exec 'set tabstop=' . a:n
+endfunction
+
+command! -nargs=1 IndentWidth call SetIndentWidth(<args>)
+command! -nargs=1 Indw IndentWidth <args>

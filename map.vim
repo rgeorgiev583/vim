@@ -70,6 +70,14 @@ else
   imap <A-[> <Esc><<i
 endif
 
+" Block indent/unindent with Tab/Shift-Tab
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+inoremap <Tab> <Esc>>>i
+inoremap <S-Tab> <Esc><<i
+
 " Keep search pattern at the center of the screen
 nmap <silent> n nzz
 nmap <silent> N Nzz
@@ -81,6 +89,10 @@ nmap <silent> g# g#zz
 " Circular windows navigation
 nmap <C-j> <c-w>w
 nmap <C-k> <c-w>W
+
+" Circular buffer navigation
+map <C-Right> :bn<CR>
+map <C-Left> :bp<CR>
 
 " Drag Current Line/s Vertically
 " Bubble single lines

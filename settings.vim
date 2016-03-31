@@ -50,7 +50,7 @@ if has("mouse")
   set mouse=a
   set mousehide
   set mousemodel=popup
-  if has("mouse_sgr")|set ttymouse=sgr|else|set ttymouse=xterm2|endif
+  if has("mouse_sgr")|set ttymouse=sgr|endif
 endif
 
 " Editor Settings
@@ -58,6 +58,7 @@ set cmdheight=1          " the command bar is 1 high
 set equalalways          " Close a split window in Vim without resizing other windows
 set guitablabel=%t
 set laststatus=2         " always show statusline
+set showcmd
 set lazyredraw           " do not redraw while running macros (much faster) (Lazy Redraw)
 set linespace=0          " space it out a little more (easier to read)
 set number               " turn on line numbers
@@ -94,7 +95,7 @@ set background=dark
 if GUI()
   set t_Co=256
   "colorscheme badwolf
-  colorscheme gruvbox
+  "colorscheme gruvbox
   let base16colorspace=256  " Access colors present in 256 colorspace
   "colorscheme base16-monokai
   "colorscheme base16-eighties
@@ -102,11 +103,11 @@ if GUI()
   hi Comment ctermfg=bg ctermbg=240
   hi Comment guifg=#585858 guibg=bg
 elseif &t_Co >= 256
-  colorscheme gruvbox
-  hi Comment ctermfg=bg ctermbg=240
+  "colorscheme gruvbox
+  "hi Comment ctermfg=bg ctermbg=240
   hi Comment guifg=#585858 guibg=bg
 else
-  colorscheme gruvbox
+  "colorscheme gruvbox
   set t_Co=8
   set t_Sf=^[[3%p1%dm
   set t_Sb=^[[4%p1%dm
@@ -154,8 +155,8 @@ endif
 
 " Wrap
 set display=lastline         " don't display @ with long paragraphs
-" set formatoptions=tcroql     " t=text, c=comments, q=format with gq command, o,r=autoinsert comment leader
-set formatoptions=roqnl12    " How automatic formatting is to be done
+set formatoptions=tcroql     " t=text, c=comments, q=format with gq command, o,r=autoinsert comment leader
+" set formatoptions=roqnl12    " How automatic formatting is to be done
 set lbr                      " line break
 set nojoinspaces             " Prevents inserting two spaces after punctuation on a join (J)
 set nowrap                   " word wrap
@@ -169,13 +170,13 @@ let &sbr = nr2char(8618).' ' " Show ↪ at the beginning of wrapped lines
 set autoindent    " Keep the indent when creating a new line
 set copyindent    " Copy the previous indentation on autoindent
 set expandtab     " Spaces instead of tabs for better cross-editor compatibility
-set shiftwidth=2  " Number of spaces to use in each autoindent step
+set shiftwidth=4  " Number of spaces to use in each autoindent step
 set smarttab      " Use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
-set softtabstop=2 " Number of spaces to skip or insert when <BS>ing or <Tab>ing
-set tabstop=2     " Two tab spaces
+set softtabstop=4 " Number of spaces to skip or insert when <BS>ing or <Tab>ing
+set tabstop=4     " Two tab spaces
 
 " Search
-"set hlsearch        " highlight all matches...
+set hlsearch        " highlight all matches...
 set ignorecase      " select case-insenitiv search
 set incsearch       " ...and also during entering the pattern
 set magic           " change the way backslashes are used in search patterns

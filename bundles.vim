@@ -10,11 +10,12 @@ endif
 " Required:
 if has('vim_starting')
   set nocompatible
+  filetype off
   set runtimepath+=$HOME/.vim/bundle/vundle/
   set sessionoptions-=options
 endif
 
-call vundle#rc(expand($HOME.'/.vim/bundle/'))
+call vundle#begin(expand($HOME.'/.vim/bundle/'))
 Plugin 'gmarik/vundle'
 
 " Plugin Groups
@@ -29,14 +30,14 @@ if count(g:bundle_groups, 'general')
   if executable('ack')
     Bundle 'mileszs/ack.vim'
   endif
-  Plugin 'itchyny/calendar.vim'
-  Plugin 'Lokaltog/vim-easymotion'
-  Plugin 'Stormherz/tablify'
-  Plugin 'bling/vim-airline'
+  "Plugin 'itchyny/calendar.vim'
+  "Plugin 'easymotion/vim-easymotion'
+  "Plugin 'Stormherz/tablify'
+  Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'kien/ctrlp.vim'
+  Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'tacahiroy/ctrlp-funky'
-  Plugin 'kris89/vim-multiple-cursors'
+  Plugin 'terryma/vim-multiple-cursors'
   Plugin 'mbbill/undotree'
   Plugin 'mhinz/vim-startify'
   Plugin 'tpope/vim-abolish'
@@ -48,17 +49,28 @@ if count(g:bundle_groups, 'general')
   Plugin 'yonchu/accelerated-smooth-scroll'
   Plugin 'pelodelfuego/vim-swoop'
   Plugin 'chrisbra/vim-diff-enhanced'
+  " PCRE support
+  Plugin 'othree/eregex.vim'
+  " tmux integration with airline
+  Plugin 'edkolev/tmuxline.vim'
 endif
 " DEVELOPER
 if count(g:bundle_groups, 'devel')
-  Plugin 'Shougo/neocomplete'
-  Plugin 'Shougo/neosnippet'
-  Plugin 'Shougo/neosnippet-snippets'
+  "if WINDOWS()
+    " NeoComplete
+    Plugin 'Shougo/neocomplete'
+    "Plugin 'Shougo/neosnippet'
+    "Plugin 'Shougo/neosnippet-snippets'
+  "else
+    " YouCompleteMe
+    "Plugin 'Valloric/YouCompleteMe'
+    "Plugin 'SirVer/ultisnips'
+  "endif
   Plugin 'osyo-manga/vim-over'
-  Plugin 'honza/vim-snippets'
-  Plugin 'mattn/emmet-vim'
+  "Plugin 'honza/vim-snippets'
+  "Plugin 'mattn/emmet-vim'
   Plugin 'Chiel92/vim-autoformat'
-  Plugin 'jiangmiao/auto-pairs'
+  "Plugin 'jiangmiao/auto-pairs'
   Plugin 'scrooloose/nerdtree'
   Plugin 'Yggdroot/indentLine'
   Plugin 'godlygeek/tabular'
@@ -66,18 +78,27 @@ if count(g:bundle_groups, 'devel')
   Plugin 'mhinz/vim-signify'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'scrooloose/syntastic'
+  " VCS (git) commands
+  Plugin 'tpope/vim-fugitive'
+  " gitk for vim
+  Plugin 'gregsexton/gitv'
 endif
 " LANGUAGES
 if count(g:bundle_groups, 'languages')
-  Plugin 'ap/vim-css-color'
+  "Plugin 'ap/vim-css-color'
   Plugin 'sheerun/vim-polyglot'
-  Plugin 'othree/html5.vim'
-  Plugin 'othree/javascript-libraries-syntax.vim'
-  Plugin 'othree/yajs.vim'
-  Plugin 'slava/vim-spacebars'
-  Plugin 'burnettk/vim-angular'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'leafgarland/typescript-vim'
+  "Plugin 'othree/html5.vim'
+  "Plugin 'othree/javascript-libraries-syntax.vim'
+  "Plugin 'othree/yajs.vim'
+  "Plugin 'slava/vim-spacebars'
+  "Plugin 'burnettk/vim-angular'
+  "Plugin 'kchmck/vim-coffee-script'
+  "Plugin 'leafgarland/typescript-vim'
+  "Plugin 'tpope/vim-rails'
+  "Plugin 'vim-ruby/vim-ruby'
+  Plugin 'fatih/vim-go'
+  Plugin 'rust-lang/rust.vim'
+  Plugin 'racer-rust/vim-racer'
 endif
 " COLORSCHEME
 if count(g:bundle_groups, 'colorscheme')
@@ -85,5 +106,6 @@ if count(g:bundle_groups, 'colorscheme')
   Plugin 'sjl/badwolf'
 endif
 
+call vundle#end()
 " automatically load filetype plugins
 filetype plugin indent on
