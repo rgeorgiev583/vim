@@ -71,8 +71,8 @@ else
 endif
 
 " Block indent/unindent with Tab/Shift-Tab
-vnoremap <Tab> >
-vnoremap <S-Tab> <
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
 inoremap <Tab> <Esc>>>i
