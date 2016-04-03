@@ -59,18 +59,18 @@ if count(g:bundle_groups, 'devel')
   "if WINDOWS()
     " NeoComplete
     Plugin 'Shougo/neocomplete'
-    "Plugin 'Shougo/neosnippet'
-    "Plugin 'Shougo/neosnippet-snippets'
+    Plugin 'Shougo/neosnippet'
+    Plugin 'Shougo/neosnippet-snippets'
   "else
     " YouCompleteMe
     "Plugin 'Valloric/YouCompleteMe'
     "Plugin 'SirVer/ultisnips'
   "endif
   Plugin 'osyo-manga/vim-over'
-  "Plugin 'honza/vim-snippets'
+  Plugin 'honza/vim-snippets'
   "Plugin 'mattn/emmet-vim'
   Plugin 'Chiel92/vim-autoformat'
-  "Plugin 'jiangmiao/auto-pairs'
+  Plugin 'jiangmiao/auto-pairs'
   Plugin 'scrooloose/nerdtree'
   Plugin 'Yggdroot/indentLine'
   Plugin 'godlygeek/tabular'
