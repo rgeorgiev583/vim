@@ -159,7 +159,9 @@ set formatoptions=tcroql     " t=text, c=comments, q=format with gq command, o,r
 " set formatoptions=roqnl12    " How automatic formatting is to be done
 set lbr                      " line break
 set nojoinspaces             " Prevents inserting two spaces after punctuation on a join (J)
-set nowrap                   " word wrap
+set wrap                     " word wrap
+set linebreak
+set nolist
 set splitbelow               " Puts new split windows to the bottom of the current
 set splitright               " Puts new vsplit windows to the right of the current
 set textwidth=0
