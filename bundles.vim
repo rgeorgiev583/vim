@@ -53,6 +53,8 @@ if count(g:bundle_groups, 'general')
   Plugin 'othree/eregex.vim'
   " tmux integration with airline
   Plugin 'edkolev/tmuxline.vim'
+  " shell prompt integration with airline
+  Plugin 'edkolev/promptline.vim'
 endif
 " DEVELOPER
 if count(g:bundle_groups, 'devel')
