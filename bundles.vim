@@ -100,6 +100,9 @@ if count(g:bundle_groups, 'languages')
   "Plugin 'tpope/vim-rails'
   "Plugin 'vim-ruby/vim-ruby'
   Plugin 'fatih/vim-go'
+  Plugin 'nsf/gocode', {'rtp': 'vim/'}
+  Plugin 'rjohnsondev/vim-compiler-go'
+  Plugin 'vim-jp/vim-go-extra'
   Plugin 'rust-lang/rust.vim'
   Plugin 'racer-rust/vim-racer'
 endif
