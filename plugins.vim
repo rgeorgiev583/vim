@@ -271,3 +271,6 @@
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+  " Golang linter
+  set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
