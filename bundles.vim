@@ -84,7 +84,7 @@ if count(g:bundle_groups, 'devel')
   Plugin 'tpope/vim-fugitive'
   " gitk for vim
   Plugin 'gregsexton/gitv'
-  Plugin 'idanarye/vim-dutyl'
+  "Plugin 'idanarye/vim-dutyl'
 endif
 " LANGUAGES
 if count(g:bundle_groups, 'languages')
