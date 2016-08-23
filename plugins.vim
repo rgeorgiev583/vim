@@ -1,6 +1,4 @@
 " PLUGINS CONFIG
-" Pathogen -- Runtime Path Manipulation
-  execute pathogen#infect()
 
 " autoformat
   noremap <F3> :Autoformat<CR><CR>
