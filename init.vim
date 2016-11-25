@@ -1,1 +1,1 @@
-/home/sid/.vimrc
+../.vimrc
