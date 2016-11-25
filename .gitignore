@@ -5,3 +5,5 @@ bundle/
 session/
 sessions/
 view/
+
+init.vim
